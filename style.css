@@ -1,0 +1,139 @@
+.background{
+    width:982px;
+    height: 300px;
+    background-color: #d9effd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man{
+    position: relative;
+
+}
+.fire{
+    position: relative;
+    left: 65px;
+    bottom: 30px;
+}
+
+.fire {
+   
+    animation-name: fire;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    }
+    
+    @keyframes fire {
+    0%, 100% {
+   
+    transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+   
+    transform: translate3d(-3px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+    
+    transform: translate3d(3px, 0, 0);
+    }
+    } 
+
+.cloud__1{
+     position: relative;
+    top: 30px;
+    left:5px; 
+} 
+ .cloud__2{
+    position: relative;
+    bottom: 50px ;
+    left: 30px;
+}
+.cloud__3{
+    position: relative;
+    top:12px;
+    left: 20px;
+} 
+
+.cloud__1 {
+    
+    animation-name: cloudDown;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    }
+   
+    @keyframes cloudDown {
+    0% {
+    
+    transform: translateY(-500%);
+    visibility: visible;
+    }
+    100% {
+   
+    transform: translateY(500%);
+    }
+    } 
+  
+    .cloud__2 {
+    
+        animation-name: cloudDown;
+        animation-iteration-count:infinite;
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        }
+       
+        @keyframes cloudDown{
+        0% {
+        
+        transform: translateY(-300%);
+        visibility: visible;
+        }
+        100% {
+       
+        transform: translateY(00%);
+        }
+        } 
+
+        .cloud__3 {
+    
+            animation-name: cloudDown;
+            animation-iteration-count:infinite;
+            animation-duration: 2.5s;
+            animation-fill-mode: both;
+            }
+           
+            @keyframes cloudDown {
+            0% {
+            
+            transform: translateY(-460%);
+            visibility: visible;
+            }
+            100% {
+           
+            transform: translateY(460%);
+            }
+            } 
+
+
+.man {
+                
+animation-name: ManFly;
+animation-iteration-count:infinite;
+animation-duration: 0.7s;
+animation-fill-mode: both;
+}
+@keyframes ManFly {
+    0% {
+        
+    }
+    50% {
+    transform: translate(-20%, -20%);
+    /* transform: none; */
+    }
+
+    100%{
+
+    }
+}         
